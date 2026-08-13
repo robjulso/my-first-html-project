@@ -12,6 +12,14 @@ margin: 2rem 0rem 0rem 0rem;
     width:90%;
     margin: 0 auto;
 }
+#pickle {
+    position: relative;
+    margin:2rem;
+}
+#rabbit {
+    display:flex;
+    align-items: stretch;
+}
 
 .flex {
    display: flex;
@@ -49,10 +57,30 @@ body {
     margin: 1rem;
 }
 .pickle {
-   width:70%; 
-   border: 1px dotted black;
+  /* width:70%; 
+   border: 1px dotted black;*/
 }
 .pickleimg {
-    height:300px;
+    position: absolute;
+    left: 60%;
+    height: 150px;
     opacity: 0.7;
+    z-index: -1;
+    top: 5%; 
+}
+.rabbitimg {   
+    position:relative;
+    transform: translateX(20%);
+    height: 200px;
+}
+.rabbittxt {
+    /*border: 1px solid black;*/
+    padding: 1rem;
+    margin: 0rem 2rem 10px 1rem;
+    width: 70%;
+    background-color:rgba(240,255,255,.5);
+}
+.solution {
+    margin: 2rem;
+    width: 80%;
 }
