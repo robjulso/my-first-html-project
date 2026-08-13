@@ -1,0 +1,50 @@
+header {
+width:100%;
+text-align:center;
+font-weight:bold;
+font-size:150%;
+margin: 2rem 0rem 0rem 0rem;
+}
+#intro {
+   border: 1px dotted grey;
+}
+#options {
+    width:90%;
+    margin: 0 auto;
+}
+
+.flex {
+   display: flex;
+    align-items: stretch;
+}
+
+body {
+    background-color: hsla(120, 50%, 50%, .2);
+    font-family:'Times New Roman', Times, serif;
+}   
+.intro {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 0rem 2rem 10px 1rem;
+    width: 55%;
+    background-color:rgba(240,255,255,.5);
+}
+.introimg {
+    width: 35%;
+    margin:0 0 10px 0;
+    opacity: 90%;
+}
+.boxs {
+    border: 1px solid black;
+}
+.boxm {
+    border: 2px solid black;
+    padding:1rem;
+    width: 30%;
+    margin:5px;
+}
+.boxl {
+    border: 3px solid black;
+    padding: 1rem;
+    margin: 1rem;
+}
