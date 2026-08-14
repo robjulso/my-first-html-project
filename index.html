@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/pickle.ico" type="image/x-icon">
         <title>Rob's home automation jurney</title>
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
     </head>
@@ -15,10 +17,10 @@
         <h3 style="padding-left: 2rem;">It started with a lure...</h3><br>
         <article class="flex">
             
-            <p class="intro">Since I was little, I was fascinated by how technology can interact with humans based on external elements. In the world of 8bits amd MS-DOS run PCs, I created silly project of several scripts how a PC can greet me based on week day, time of the day etc. and respond to my simple messages. Fast forward more than two decades I moved to a new old house where I finally get to play with smart home gadgets. Not uncommonly, I started with pre-build Chinese cloud-based gadgets like [<em>insert any chinese smart home brand</em>]. <br><br><br> <q>The future is not set.</q> T800</p>
+            <p class="intro">Since I was little, I was fascinated by how technology can interact with humans based on external elements. In the world of 8bits and MS-DOS run PCs, I created silly project of several scripts how a PC can greet me based on week day, time of the day etc. and respond to my simple messages. Fast forward more than two decades I moved to a new old house where I finally get to play with smart home gadgets. Not uncommonly, I started with pre-build Chinese cloud-based gadgets like [<em>insert any Chinese smart home brand</em>]. <br><br><br> <q>The future is not set.</q> T800</p>
 
 
-            <img class="introimg" src="images/introimg1.jpg" alt="Collection of smart home devices displayed together: Sonoff brand smart plug with orange packaging, Sonoff TX Wi-Fi smart wall switch with blue packaging labeled 35001, white motion sensor, white smart plug adapter, small green smart controller device, and various cables arranged on a white surface. The devices demonstrate the range of affordable IoT home automation products available.">
+            <img class="introimg" src="images/introimg1.jpg" alt="Collection of smart home devices displayed together: Sonoff brand smart plug with orange packaging, Sonoff TX Wi-Fi smart wall switch with blue packaging labelled 35001, white motion sensor, white smart plug adapter, small green smart controller device, and various cables arranged on a white surface. The devices demonstrate the range of affordable IoT home automation products available.">
         </article>
     </section>
     <section id="options">
@@ -26,32 +28,39 @@
         <article class="flex">
             <div class="boxm">
                 <p><u>Xiaomi & Aqara devices</u> <br> Bulb lights and door/windows sensors with alarm.</p>
-                <ul> They were
+                <p>They were</p>
+                <ul>
                     <li>Cheap (mostly)</li>
                     <li>Fairly reliable</li>
+                </ul>
                     <p>but also</p>
+                <ul>
                     <li>often require internet connection</li>
                     <li>App not great</li>
                     <li>Limited device options</li>
                     <li>Out of region cloud placement</li>
-
                 </ul>
             </div>
             <div class="boxm">
                 <p><u>Sonoff/eWelink devices</u></p>
-                 <ul>Are
+                <p>are</p> 
+                <ul>
                     <li>also failry cheap</li>
                     <li>also fairly reliable</li>
                     <li>Wifi only (at start) with it's own limitation</li>
+                 </ul>
                     <p>but</p>
+                <ul>
                     <li>reliability varies from product to product</li>
                     <li>Not all devices work as expected</li>
                     <li>Limited device options</li>
                     <li>Out of region cloud placement</li>
+                </ul>
             </div>
             <div class="boxm">
                 <p><u>Other devices</u></p>
-                <ul>Various other devices wich I added for different use cases over time, including
+                <p>Various other devices which I added for different use cases over time, including</p>
+                <ul>
                     <li>Tuya/SmartLife - Wifi</li>
                     <li>Shelly - z-wave mostly</li>
                     <li>Tapo - internal wifi cameras</li>
@@ -67,7 +76,7 @@
         </article>
     </section>
     <section id="pickle">
-        <h3 style="text-align: center";> The Pickle </h3>
+        <h3 style="text-align: center"> The Pickle </h3>
             <img class="pickleimg" src="images/pickle.png" alt="Single green pickle illustration centered on a transparent background; subject is a stylized pickle with no action; environment is a simple graphic with no scene; tone is playful and lighthearted">
             <!--image downloaded from https://www.hiclipart.com/free-transparent-background-png-clipart-jdiga ,free for non-commercial use-->
         <article>
@@ -78,7 +87,7 @@
                 <li> Internet connection is mostly a requirement to be able to control devices. Automations run from cloud (not always though) so my weak internet connection at that point in time resulted in lots of automation misses or even miss-fires.</li>
                 <li> At this point I have several different applications I need to jump between. Every now and then some of these log me off for no reason so I don't even get notifications. This part, amongst others, is very frustrating.</li>
                 <li> IoT devices being what they are (chatty little suckers), they slowly start to kripple my WLAN </li>
-                <li> Worst of all, other family memnbers starting to be anooyed if a switch does not work, light turning off or on on itself, notifications come and go as they please,... </li>
+                <li> Worst of all, other family members starting to be annoyed if a switch does not work, light turning off or on on itself, notifications come and go as they please,... </li>
             </ul>
             <em>So how to get out of this pickle?</em>
 
@@ -86,43 +95,60 @@
     </section>
 
    <section>
-        <h3 style="text-align: center";> The Rabbit Hole </h3>
+        <h3 style="text-align: center"> The Rabbit Hole </h3>
         
         <article id="rabbit">
             
             <p class="rabbittxt">
-                With all that in mind, I started my all-in-one-place home automation reasearch with clear requirements for reliability (using the best devices for specific job), to stabilize my wired and wireless network, to have one dashboard with all my devices in one place, having had one place for all automations whcih will not conflict, having primarily local control instead of cloud or over-the-internet, limit number of energy hungry wifi devices and cover all corners of the house with most effective connection type (three stories hause with thick steel reinforced concrete walls).
-                All those requirements call for multiple changes from IoT ecosystems, through all of networking, wireless coverage redesign, LAN redesign, power wiring redesign with the focus on redundancy and much more that I did not forsee at that time. The more I learned, the more I knew, the more changes I had to plan, more to implement, which created new set of problems to deal with and learn and reseach again.
+                With all that in mind, I started my all-in-one-place home automation research with clear requirements for reliability (using the best devices for specific job), to stabilize my wired and wireless network, to have one dashboard with all my devices in one place, having had one place for all automations which will not conflict, having primarily local control instead of cloud or over-the-internet, limit number of energy hungry wifi devices and cover all corners of the house with most effective connection type (three stories house with thick steel reinforced concrete walls).
+                All those requirements call for multiple changes from IoT ecosystems, through all of networking, wireless coverage redesign, LAN redesign, power wiring redesign with the focus on redundancy and much more that I did not foresee at that time. The more I learned, the more I knew, the more changes I had to plan, more to implement, which created new set of problems to deal with and learn and research again.
             </p>
             
 
-           <img class="rabbitimg"src="https://p0.piqsels.com/preview/77/991/743/down-the-rabbit-hole-sign.jpg" alt="neon sign with text down the rabbit on black canvas">
+           <img class="rabbitimg" src="https://p0.piqsels.com/preview/77/991/743/down-the-rabbit-hole-sign.jpg" alt="neon sign with text down the rabbit on black canvas">
         </article>
-        <article class="solution";>
-        <p>This is when I stumbled onto Home Assistant, which launched me into a neverending cycle of research → implement → fail → pull hair → try again → fail again → finally win → just to start all over again. Needless to day my hair never recovered.</p>
-        <p>Fespite all, over the course of several years I mostly successfully:</p>
+        <h3 style="text-align: center">Home Assistant</h3>
+        <article class="solution">
+            <p>This is when I stumbled onto Home Assistant, which launched me into a neverending cycle of research → implement → fail → pull hair → try again → fail again → finally win → just to start all over again. Needless to say, my hair never recovered.</p>
+            <p>Despite all, over the course of several years I mostly successfully:</p>
         <ul>
             <li>Migrated from DECO mesh to more stable managed Ubiquiti AP network</li>
             <li>Moved all IoT to their own VLAN</li>
-            <li>Adopted all devices into Home Assistant </li>
+            <li>Adopted all devices into Home Assistant 
                 <ul>
                     <li>migrated to ZHA or Zigbee2MQTT (~100 devices) for stability</li>
                     <li>migrated to Z-wave (~10) for range</li>
                     <li>migrated to Thread for tinkering mostly (less than 10 devices) </li>
-                </ul>
+                </ul></li>
             <li>incorporated surveillance solution into HA</li>
             <li>Re-wired my home to enable UPS backup of the whole network</li>
             <li>Attached NAS to host specific services as well as DATA</li>
             <li>Enabled the control of all interior lights + added control and the lights itself along the whole garden and outdoor</li>
+            <li>Placed a dedicated tablet on livingroom's wall with dashboard for all devices in the house, including:
+                <ul>
+                    <li>Camera live feeds</li>
+                    <li>Weather radar with map</li>
+                    <li>All switches and lights with current state</li>
+                    <li>All sensors with current states</li>
+                    <li>Power characteristics and actual consumption</li>
+                    <li>Upcoming holidays and events</li>
+                    <li>Shutters and blinds positions with control</li>
+                    <li>Watering state</li>
+                </ul>
+            </li>
             <li>...and so much more</li>
         </ul>
-        <img style="width: 60%" src="images/hassyellow-h.jpg" alt="Yellow Home Assistant logo centered on a white background; subject is a stylized house-shaped logo representing the Home Assistant project; environment is minimal taken in a dark room, in foreground there is a out of focus skull">
-        <p>And even though I feel the jurney just began, it is rewaring and I'm genuinely excited about how things are progressing and how much I'm learning on the way. I have a specific outcome in mind where I want to land eventually with this, but that will be for another article...</p>
+        <br>
+        <p>So overall, I ended up with unified control, reliable network, 95% of error free operations translating in 96% not annoyed wife (she has a 1% tolerance). Is this all rainbows and unicorns? Definitely not, but it's already so much more to what I envisioned at the beginning of the journey. </p>
+        <img class="hassimg" src="images/hassyellow-h.jpg" alt="Yellow Home Assistant logo centered on a white background; subject is a stylized house-shaped logo representing the Home Assistant project; environment is minimal taken in a dark room, in foreground there is a out of focus skull">
+        <p>And even though I feel the journey just began, it is rewarding and I'm genuinely excited about how things are progressing and how much I'm learning on the way. I have a specific outcome in mind where I want to land eventually with this, but that will be for another article...</p>
         </article>
     </section>
     </main>
-    <footer> Created by Rob @ 2026
-        <em>no GenAI</em>
+    <footer> Created by <a href="mailto:rob.sopko@gmail.com">Robo Sopko</a>@ 2026
+        <nav>
+            <a href="https://no-ai-icon.com/statement/"><em><s>GenAI</s></em></a>
+        </nav>
     </footer>
     <!--no AI used for text or code generation, only few img alt-->
     </body>
