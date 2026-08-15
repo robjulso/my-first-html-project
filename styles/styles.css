@@ -15,10 +15,18 @@ margin: 2rem 0rem 0rem 0rem;
 #pickle {
     position: relative;
     margin:2rem;
+    padding:1rem;
 }
 #rabbit {
     display:flex;
     align-items: stretch;
+}
+
+#hass {
+    position:relative;
+    margin:2rem;
+    padding:1rem;
+    width: 65%;
 }
 
 .flex {
@@ -40,7 +48,7 @@ body {
 .introimg {
     width: 35%;
     margin:0 0 10px 0;
-    opacity: 90%;
+    opacity: .9;
 }
 .introimg:hover {
     transform: scale(1.25) translateX(-20%);
@@ -63,9 +71,6 @@ body {
     padding: 1rem;
     margin: 1rem;
 }
-#pickle {
- /* background-color:rgba(240,255,255,.5);*/
-}
 .pickleimg {
     position: absolute;
     left: 60%;
@@ -77,18 +82,28 @@ body {
 .rabbitimg {   
     position:relative;
     transform: translateX(20%);
-    height: 200px;
+    width: 10%;
+    padding:2rem;
 }
 .rabbittxt {
-    /*border: 1px solid black;*/
-    padding: 1rem;
+    padding: 2rem;
     margin: 0rem 2rem 10px 1rem;
     width: 70%;
     background-color:rgba(240,255,255,1);
 }
-.solution {
-    margin: 2rem;
-    width: 80%;
+
+.dashimg {
+    position:absolute;
+    left: 100%;
+    top: 10%;
+    width: 35%;
+    opacity: 1;
+    z-index: 0;
+}
+.dashimg:hover {
+    box-shadow: 0 0 100px rgba(0,0,0,.6);
+    transform:scale(2) translateX(-20%);
+    transition:0.5s ease;
 }
 .hassimg {
     width:66%;
@@ -100,4 +115,5 @@ body {
 }
 main {
     background-color: hsla(150,30%,90%,.5);
+    z-index: -10;
 }
