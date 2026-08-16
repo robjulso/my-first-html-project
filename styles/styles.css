@@ -30,23 +30,27 @@ margin: 2rem 0rem 0rem 0rem;
 }
 
 .flex {
-   display: flex;
+    display: flex;
     align-items: stretch;
 }
 
 body {
     background-color: hsla(183, 100%, 93%, 0.2);
     font-family:'Times New Roman', Times, serif;
+}
+figure {
+    width:35%;
 }   
 .intro {
-    border: 1px solid black;
+    border: 1px solid grey;
     padding: 1rem;
     margin: 0rem 2rem 10px 1rem;
     width: 55%;
     background-color:rgba(240,255,255,.5);
 }
 .introimg {
-    width: 35%;
+    display:block;
+    width: 100%;
     margin:0 0 10px 0;
     opacity: .9;
 }
@@ -55,7 +59,7 @@ body {
     transition: transform 0.5s ease; 
     box-shadow: 0 0 100px rgb(0,0,0,.7);
     z-index: 1;
-    opacity: 100%;
+    opacity: 0.95;
 }
 .boxs {
     border: 1px solid black;
