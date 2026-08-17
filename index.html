@@ -8,13 +8,24 @@
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
     </head>
 <body>
-    <header>Rob's Home Automation Journey</header><br>
-    <p style="text-align:center"> and why it's a pickle that threw me down the rabbit hole...</p>
-  
-    <Br>
+    <header>
+        <div>
+            <h1>Rob's Home Automation Journey</h1>
+            <p> and why it's a pickle that threw me down the rabbit hole...</p>
+        </div>
+    </header>
+        <nav>
+        <div class="container">
+            <a href="#intro">Beggining</a>
+            <a href="#options">Ecosystems</a>
+            <a href="#pickle">Issues</a>
+            <a href="#rabbit">Planning</a>
+            <a href="#hass">Not the end</a>
+        </div>
+    </nav>
     <main>
         <section id="intro">
-        <h3 style="padding-left: 2rem;">It started with a lure...</h3><br>
+        <h2 style="padding-left: 2rem;">It all started with a lure...</h2>
         <article class="flex">     
             <p class="intro">Since I was little, I was fascinated by how technology can interact with humans based on external elements. In the world of 8bits and MS-DOS run PCs, I created silly project of several scripts how a PC can greet me based on week day, time of the day etc. and respond to my simple messages. Fast forward more than two decades I moved to a new old house where I finally get to play with smart home gadgets. Not uncommonly, I started with pre-build Chinese cloud-based gadgets like [<em>insert any Chinese smart home brand</em>]. <br><br><br> <q>The future is not set.</q> T800</p>
         <figure>
@@ -79,7 +90,7 @@
         <h3 style="text-align: center"> The Pickle </h3>
             <img class="pickleimg" src="images/pickle.png" alt="Single green pickle illustration centered on a transparent background; subject is a stylized pickle with no action; environment is a simple graphic with no scene; tone is playful and lighthearted">
             <!--image downloaded from https://www.hiclipart.com/free-transparent-background-png-clipart-jdiga ,free for non-commercial use-->
-        <article>
+        <article class="pickletxt">
             <p>As I added more and more devices, I run into multitude of issues with em... pretty much everything. Common issues I already touched upon:</p> 
             <ul> 
                 <li>Solution is not private, all apps will require different cloud service. </li>
@@ -90,25 +101,21 @@
                 <li> Worst of all, other family members starting to be annoyed if a switch does not work, light turning off or on on itself, notifications come and go as they please,... </li>
             </ul>
             <em>So how to get out of this pickle?</em>
-
         </article>
     </section>
-
    <section>
-        <h3 style="text-align: center"> The Rabbit Hole </h3>
-        
+        <h3 style="text-align: center"> The Rabbit Hole </h3>    
         <article id="rabbit">
-            
             <p class="rabbittxt">
                 With all that in mind, I started my all-in-one-place home automation research with clear requirements for reliability (using the best devices for specific job), to stabilize my wired and wireless network, to have one dashboard with all my devices in one place, having had one place for all automations which will not conflict, having primarily local control instead of cloud or over-the-internet, limit number of energy hungry wifi devices and cover all corners of the house with most effective connection type (three stories house with thick steel reinforced concrete walls).
                 All those requirements call for multiple changes from IoT ecosystems, through all of networking, wireless coverage redesign, LAN redesign, power wiring redesign with the focus on redundancy and much more that I did not foresee at that time. The more I learned, the more I knew, the more changes I had to plan, more to implement, which created new set of problems to deal with and learn and research again.
             </p>
-            
-
            <img class="rabbitimg" src="https://p0.piqsels.com/preview/77/991/743/down-the-rabbit-hole-sign.jpg" alt="neon sign with text down the rabbit on black canvas">
         </article>
+   </section>
+    <section id="hass">
         <h3 style="text-align: center">Home Assistant</h3>
-        <article id="hass">
+        <article class="hasstxt">
             <p>This is when I stumbled onto Home Assistant, which launched me into a neverending cycle of research → implement → fail → pull hair → try again → fail again → finally win → just to start all over again. Needless to say, my hair never recovered.</p>
             <p>Despite all, over the course of several years I mostly successfully:</p>
         <ul>
@@ -147,7 +154,7 @@
         <blockquote><em>"The best automation is invisible."</em> - Mark Weiser (father of ubiquitous computing)</blockquote>
     </section>
     </main>
-    <footer> Created by <a href="mailto:rob.sopko@gmail.com">Robo Sopko</a>@ 2026
+    <footer> Created by <a href="mailto:rob.sopko@gmail.com"><em>Robo Sopko</em></a> &copy; 2026
         <nav>
             <a href="https://no-ai-icon.com/statement/"><em><s>GenAI</s></em></a>
         </nav>

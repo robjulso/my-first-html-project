@@ -1,12 +1,71 @@
+/** {
+    background-color:#f5f7fa;
+}*/
+
 header {
 width:100%;
+background-color: rgba(28, 28, 28, 0.81);
 text-align:center;
+color:azure;
 font-weight:bold;
 font-size:150%;
-margin: 2rem 0rem 0rem 0rem;
+/*margin: 2rem 0rem 0rem 0rem;*/
+padding:2rem 0rem;
 }
+header p{
+    font-size:1rem;
+    font-weight:lighter;
+}
+h1 {
+    font-size:2rem;
+}
+h2 {
+    font-size:1.1rem;
+    margin: 1rem 0 0 0;
+}
+footer {
+    margin:0;
+    padding:2rem;
+    background-color:rgba(28, 28, 28, 0.81);
+    color:azure;
+    text-align:center;
+}
+footer a:link,
+footer a:visited {
+    color: azure;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #d0eaff;
+}
+footer a:active {
+    color: #bcdfff;
+}
+.container {
+    font-size: 1.1rem;
+    text-align:center;
+    background-color: rgba(0,0,0,.9) ; /*rgba(28, 28, 28, 0.81);*/
+    color: azure;
+    margin:0;
+    padding: 0.5rem;
+}
+.container a {
+    margin: 0 3rem;
+}
+.container a:link,
+.container a:visited {
+    color:azure;
+    text-decoration:none;
+}
+.container a:active,
+.container a:hover {
+    text-decoration:underline;
+    color:yellow;
+}
+
 #intro {
    border: 1px dotted grey;
+   box-shadow:0 0 10px lightgrey;
 }
 #options {
     width:90%;
@@ -16,35 +75,41 @@ margin: 2rem 0rem 0rem 0rem;
     position: relative;
     margin:2rem;
     padding:1rem;
+    border:1px dotted lightgrey;
+    box-shadow:0 0 10px lightgrey;
 }
 #rabbit {
     display:flex;
     align-items: stretch;
+    border:1px dotted lightgrey;
+    box-shadow:0 0 10px lightgrey;
+    margin:2rem;
+    padding:1rem;
 }
-
 #hass {
-    position:relative;
-    margin:2rem 2rem 0 2rem;
-    padding:1rem 1rem 0 1rem;
-    width: 65%;
+    border:1px dotted lightgrey;
+    box-shadow:0 0 10px lightgrey;
+    margin:2rem;
+    padding:1rem;
 }
-
 .flex {
     display: flex;
     align-items: stretch;
 }
 
 body {
-    background-color: hsla(183, 100%, 93%, 0.2);
+    background-color: #f5f7fa;
     font-family:'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
 }
 figure {
     width:35%;
 }   
 .intro {
     border: 1px solid grey;
-    padding: 1rem;
-    margin: 0rem 2rem 10px 1rem;
+    padding: 1.5rem;
+    margin: 1rem; /*  0rem 2rem 10px 1rem;*/
     width: 55%;
     background-color:rgba(240,255,255,.5);
 }
@@ -61,28 +126,26 @@ figure {
     z-index: 1;
     opacity: 0.95;
 }
-.boxs {
-    border: 1px solid black;
-}
 .boxm {
     border: 2px solid black;
     padding:1rem;
     width: 30%;
     margin:5px;
 }
-.boxl {
-    border: 3px solid black;
-    padding: 1rem;
-    margin: 1rem;
-}
 .pickleimg {
     position: absolute;
-    left: 60%;
+    left: 65%;
     height: 150px;
-    opacity: 0.9;
-    z-index: -1;
-    top: 5%; 
+    opacity: 0.65;
+    z-index: 0;
+    top: 5%;
 }
+.pickletxt {
+    position:relative;
+    z-index:1;
+    background:transparent;
+}
+
 .rabbitimg {   
     position:relative;
     transform: translateX(20%);
@@ -93,7 +156,6 @@ figure {
     padding: 2rem;
     margin: 0rem 2rem 10px 1rem;
     width: 70%;
-    background-color:rgba(240,255,255,1);
 }
 
 .dashimg {
@@ -109,6 +171,12 @@ figure {
     transform:scale(2) translateX(-20%);
     transition:0.5s ease;
 }
+.hasstxt {
+    position:relative;
+    margin:2rem;
+    padding:1rem;
+    width: 65%;
+}
 .hassimg {
     width:66%;
 }
@@ -118,6 +186,7 @@ figure {
     transition: 0.8s ease;
 }
 main {
-    background-color: hsla(150,30%,90%,.5);
+    margin:4rem;
+    /*background-color: hsla(150,30%,90%,.5);*/
     z-index: -10;
 }
