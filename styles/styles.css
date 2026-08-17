@@ -66,6 +66,7 @@ footer a:active {
 #intro {
    border: 1px dotted grey;
    box-shadow:0 0 10px lightgrey;
+   margin:2rem;
 }
 #options {
     width:90%;
@@ -144,6 +145,8 @@ figure {
     position:relative;
     z-index:1;
     background:transparent;
+    padding:1rem;
+    margin: 2rem;
 }
 
 .rabbitimg {   
