@@ -1,15 +1,10 @@
-/** {
-    background-color:#f5f7fa;
-}*/
-
 header {
 width:100%;
-background-color: rgba(28, 28, 28, 0.81);
+background-color: rgb(95, 95, 95);
 text-align:center;
 color:azure;
 font-weight:bold;
 font-size:150%;
-/*margin: 2rem 0rem 0rem 0rem;*/
 padding:2rem 0rem;
 }
 header p{
@@ -26,7 +21,7 @@ h2 {
 footer {
     margin:0;
     padding:2rem;
-    background-color:rgba(28, 28, 28, 0.81);
+    background-color:rgb(95,95,95);
     color:azure;
     text-align:center;
 }
@@ -49,18 +44,17 @@ footer a:active {
     margin:0;
     padding: 0.5rem;
 }
-.container a {
-    margin: 0 3rem;
-}
 .container a:link,
 .container a:visited {
     color:azure;
     text-decoration:none;
+    padding:0 3rem;
 }
 .container a:active,
 .container a:hover {
-    text-decoration:underline;
     color:yellow;
+    background-color: rgb(95, 95, 95);
+    padding: 0.4rem 3rem;
 }
 
 #intro {
@@ -80,8 +74,6 @@ footer a:active {
     box-shadow:0 0 10px lightgrey;
 }
 #rabbit {
-    display:flex;
-    align-items: stretch;
     border:1px dotted lightgrey;
     box-shadow:0 0 10px lightgrey;
     margin:2rem;
@@ -93,11 +85,14 @@ footer a:active {
     margin:2rem;
     padding:1rem;
 }
+.rabbit {
+    display:flex;
+    align-items: stretch;
+}
 .flex {
     display: flex;
     align-items: stretch;
 }
-
 body {
     background-color: #f5f7fa;
     font-family:'Times New Roman', Times, serif;
@@ -189,7 +184,7 @@ figure {
     transition: 0.8s ease;
 }
 main {
-    margin:4rem;
-    /*background-color: hsla(150,30%,90%,.5);*/
-    z-index: -10;
+    /*margin:4rem;*/
+    padding:0 12rem;
+    z-index: -1;
 }
